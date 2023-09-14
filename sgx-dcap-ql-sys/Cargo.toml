@@ -8,6 +8,7 @@ links = "sgx_dcap_ql"
 default = ["std"]
 std = ["glog/std"]
 tstd = ["sgxlib/tstd", "glog/tstd"]
+sgx = ["sgxlib/sgx"]
 
 [dependencies]
 glog = { git = "https://github.com/automata-network/glog-rs", default-features = false }
