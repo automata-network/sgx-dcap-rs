@@ -5,9 +5,9 @@ edition = "2021"
 
 [features]
 default = ["std"]
-std = []
-tstd = ["sgxlib/tstd"]
+std = ["sgx-dcap-ql-sys/std"]
+tstd = ["sgxlib/tstd", "sgx-dcap-ql-sys/tstd"]
 
 [dependencies]
 sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features = false }
-sgx-dcap-ql-sys = { version = "0.1.0", path = "../sgx-dcap-ql-sys" }
+sgx-dcap-ql-sys = { version = "0.1.0", path = "../sgx-dcap-ql-sys", default-features = false }
