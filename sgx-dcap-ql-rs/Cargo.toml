@@ -1,0 +1,13 @@
+[package]
+name = "sgx-dcap-ql-rs"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["std"]
+std = []
+tstd = ["sgxlib/tstd"]
+
+[dependencies]
+sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features = false }
+sgx-dcap-ql-sys = { version = "0.1.0", path = "../sgx-dcap-ql-sys" }

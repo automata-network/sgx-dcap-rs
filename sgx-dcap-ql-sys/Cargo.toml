@@ -1,0 +1,17 @@
+[package]
+name = "sgx-dcap-ql-sys"
+version = "0.1.0"
+edition = "2021"
+links = "sgx_dcap_ql"
+
+[features]
+default = ["std"]
+std = []
+tstd = ["sgxlib/tstd"]
+
+[dependencies]
+glog = { git = "https://github.com/automata-network/glog-rs" }
+sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features = false }
+
+[build-dependencies]
+bindgen = "0.59.1"
