@@ -46,4 +46,10 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 
+#![cfg_attr(not(feature = "std"), no_std)]
+#[cfg(feature = "tstd")]
+#[macro_use]
+extern crate sgxlib as std;
+use std::prelude::v1::*;
+
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));

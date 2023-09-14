@@ -32,6 +32,12 @@
 //! This is the Intel SGX DCAP Quote Library for Rust.
 #![allow(non_camel_case_types)]
 
+#![cfg_attr(not(feature = "std"), no_std)]
+#[cfg(feature = "tstd")]
+#[macro_use]
+extern crate sgxlib as std;
+use std::prelude::v1::*;
+
 pub use sgx_dcap_ql_sys::quote3_error_t;
 pub use sgx_dcap_ql_sys::sgx_target_info_t;
 pub use sgx_dcap_ql_sys::sgx_report_t;
