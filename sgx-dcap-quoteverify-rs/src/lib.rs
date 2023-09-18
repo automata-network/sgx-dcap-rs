@@ -45,11 +45,14 @@ use std::prelude::v1::*;
 use sgx_dcap_quoteverify_sys as qvl_sys;
 
 pub use qvl_sys::quote3_error_t;
-pub use qvl_sys::sgx_ql_qe_report_info_t;
-pub use qvl_sys::sgx_ql_qv_result_t;
-pub use qvl_sys::sgx_ql_qv_supplemental_t;
-pub use qvl_sys::sgx_ql_qve_collateral_t as sgx_ql_qv_collateral_t;
 pub use qvl_sys::sgx_ql_request_policy_t;
+pub use qvl_sys::sgx_ql_qv_supplemental_t;
+pub use qvl_sys::sgx_ql_qve_collateral_t;
+pub use qvl_sys::tdx_ql_qve_collateral_t;
+pub use qvl_sys::tdx_ql_qve_collateral_t as tdx_ql_qv_collateral_t;
+pub use qvl_sys::sgx_ql_qve_collateral_t as sgx_ql_qv_collateral_t;
+pub use qvl_sys::sgx_ql_qv_result_t;
+pub use qvl_sys::sgx_ql_qe_report_info_t;
 pub use qvl_sys::sgx_qv_path_type_t;
 pub use qvl_sys::tee_supp_data_descriptor_t;
 
