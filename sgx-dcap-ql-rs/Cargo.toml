@@ -11,4 +11,4 @@ sgx = ["sgxlib/sgx"]
 
 [dependencies]
 sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features = false }
-sgx-dcap-ql-sys = { version = "0.1.0", path = "../sgx-dcap-ql-sys", default-features = false }
+sgx-dcap-ql-sys = { path = "../sgx-dcap-ql-sys", default-features = false }

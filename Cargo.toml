@@ -1,5 +1,7 @@
 [workspace]
 members = [
+    "sgx-dcap-quoteverify-rs",
+    "sgx-dcap-quoteverify-sys",
     "sgx-dcap-ql-sys",
     "sgx-dcap-ql-rs"
 ]

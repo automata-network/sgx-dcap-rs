@@ -1,0 +1,18 @@
+[package]
+name = "sgx-dcap-quoteverify-rs"
+version = "0.1.0"
+edition = "2021"
+license = "BSD-3-Clause"
+description = "Intel(R) TEE Quote Verification Rust Library"
+readme = "README.md"
+homepage = "https://github.com/intel/SGXDataCenterAttestationPrimitives"
+
+[features]
+default = ["std"]
+std = ["sgx-dcap-quoteverify-sys/std"]
+tstd = ["sgxlib/tstd", "sgx-dcap-quoteverify-sys/tstd"]
+sgx = ["sgxlib/sgx", "sgx-dcap-quoteverify-sys/sgx"]
+
+[dependencies]
+sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features = false }
+sgx-dcap-quoteverify-sys = { path = "../sgx-dcap-quoteverify-sys", default-features = false }
