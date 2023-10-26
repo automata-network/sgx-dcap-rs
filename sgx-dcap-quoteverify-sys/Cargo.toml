@@ -20,4 +20,4 @@ glog = { git = "https://github.com/automata-network/glog-rs", default-features =
 sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features = false }
 
 [build-dependencies]
-bindgen = "0.59.1"
+bindgen = { version = "0.59.1", default-features = false, features = ["runtime"] }
