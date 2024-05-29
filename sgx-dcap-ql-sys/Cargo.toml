@@ -16,3 +16,5 @@ sgxlib = { git = "https://github.com/automata-network/sgxlib", default-features 
 
 [build-dependencies]
 bindgen = { version = "0.59.1", default-features = false, features = ["runtime"] }
+clang-sys = { version = "=1.7" }
+cc = "=1.0.94"
